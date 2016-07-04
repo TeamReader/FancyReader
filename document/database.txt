@@ -1,0 +1,26 @@
+用户表
+	user
+		user_name:
+		password:
+		fontstyle_app:
+		fontsize_app:
+		fontcolor_app:
+		bg_app:
+		fontstyle_fx:
+		fontsize_fx:
+		fontcolor_fx:
+		bg_fx:
+		
+记录表
+	record
+		user_name:
+		book_name:
+		line_num:行数，默认为0
+		
+		
+书表
+	book
+		book_name:
+		ico_url:url
+		author：
+		description：书籍简介
