@@ -1,25 +1,25 @@
-�������˽ӿ�
-	��¼��
+服务器端接口
+	登录：
 		/login/logincheck.Action
-		���û���������
-		�����Ƿ��¼�ɹ�
-	����ͼ���б����أ�
+		传用户名和密码
+		返回是否登录成功
+	个人图书列表加载：
 		/books/loadBookList.Action
-		��Ҫ���û���
-	��ȡͼ��
+		需要传用户名
+	获取图书
 		/books/fatchBook.Action
-		����ͼ������,��ȡtxt�ı��Լ��ϴ��Ķ�λ��
-		���û�����ͼ������
-	ɾ��ͼ��
+		根据图书名称,获取txt文本以及上次阅读位置
+		传用户名和图书名称
+	删除图书
 		/books/deleteBook.Action
-		��ͼ�����ơ��û���
-	��¼�Ķ�λ��
+		传图书名称、用户名
+	记录阅读位置
 		/books/recordIndex.Action
-		��ͼ�����ơ��Ķ�λ�á��û���
-	����ͼ��
+		传图书名称、阅读位置、用户名
+	搜索图书
 		/books/search.Action
-		��������ͼ������
-	����ͼ��
+		传入搜索图书名称
+	添加图书
 		/books/addBook.Action
-		��ͼ�����ơ��û���
+		传图书名称、用户名
 	
