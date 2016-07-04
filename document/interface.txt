@@ -1,0 +1,25 @@
+服务器端接口
+	登录：
+		/login/logincheck.Action
+		传用户名和密码
+		返回是否登录成功
+	个人图书列表加载：
+		/books/loadBookList.Action
+		需要传用户名
+	获取图书
+		/books/fatchBook.Action
+		根据图书名称,获取txt文本以及上次阅读位置
+		传用户名和图书名称
+	删除图书
+		/books/deleteBook.Action
+		传图书名称、用户名
+	记录阅读位置
+		/books/recordIndex.Action
+		传图书名称、阅读位置、用户名
+	搜索图书
+		/books/search.Action
+		传入搜索图书名称
+	添加图书
+		/books/addBook.Action
+		传图书名称、用户名
+	
