@@ -1,12 +1,38 @@
 服务器端接口
 	登录：
-		/login/logincheck.Action
-		传用户名和密码:{"user_name":"xxx","password":"xxx"}
+		/logincheck
+		传用户名和密码:userName=xxx&password=xxx
 		返回是否登录成功:{"result":true/false}
-		
+	
+	注册：
+		/userRegist
+		传用户名和密码:userName=xxx&password=xxx
+		返回是否注册成功:{"result":true/false}
+	
+	
+	获取个人偏好设置：
+		/getPregerence
+		传用户名：userName=xxx
+		返回：
+			{
+			  "userName":"xxx",
+			  "password":"xxx",
+			  "fontstyleApp":"xxx",
+			  "fontstyleApp":"xxx",
+			  "fontsizeApp":"xxx",
+			  "fontcolorApp":"xxx",
+			  "bgApp":"xxx",
+			  "fontstyleFx":"xxx",
+			  "fontsizeFx":"xxx",
+			  "fontcolorFx":"xxx",
+			  "bgFx":"xxx"
+			}
+			其中密码是无意义的
+			
+			
 	个人图书列表加载：
-		/books/loadBookList.Action
-		需要传用户名:{"user_name":"xx"}
+		/loadBookList
+		需要传用户名:userName=xxx
 		传回book_name和ico_url、book_url:
 			{
 			  "books":[
@@ -21,38 +47,25 @@
 			}
 	
 	删除图书
-		/books/deleteBook.Action
-		传图书名称、用户名
-			{
-			  "book_name":"xxxx",
-			  "user_name":"xxxx"
-			}
-		返回是否删除成功:{"result":true/false}
+		/deleteBook
+		传图书名称、用户名:bookName=xxx&userName=xxx
+			
+		返回是否删除成功:{"result":"true"/"false"}
 		
 	添加图书
-		/books/addBook.Action
-		传图书名称、用户名
-			{
-			  "book_name":"xxxx",
-			  "user_name":"xxxx"
-			}
+		/addBook
+		传图书名称、用户名:bookName=xxx&userName=xxx
+			
 			
 			
 	记录阅读位置
-		/books/recordIndex.Action
-		传图书名称、阅读位置、用户名
-						
-			{
-			  "book_name":"xxxx",
-			  "user_name":"xxxx",
-			  "line_num":"xxx"
-			}
+		/recordIndex
+		传图书名称、阅读位置、用户名:bookName=xxx&userName=xxx&lineNum=xxx
+			
 	搜索图书
-		/books/search.Action
-		传入搜索图书名称book_name
-			{
-			  "book_name":"xxxx",
-			}
+		/search
+		传入搜索图书名称:bookName=xxx
+			
 		返回：
 			{
 			  "books":[
