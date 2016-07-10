@@ -61,7 +61,7 @@
 	添加图书
 		/addBook
 		传图书名称、用户名:bookName=xxx&userName=xxx
-			
+		返回是否删除成功:{"result":"true"/"false"}	
 			
 			
 	记录阅读位置
