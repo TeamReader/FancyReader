@@ -29,7 +29,13 @@
 			}
 			其中密码是无意义的
 			
-			
+		
+	推送个人偏好设置：
+		/pushPregerence
+		传：userName、password、fontstyleApp、fontstyleApp、fontsizeApp、fontcolorApp、bgApp、fontstyleFx、fontsizeFx、fontcolorFx、bgFx
+		返回是否设置成功:{"result":"true"/"false"}
+
+	
 	个人图书列表加载：
 		/loadBookList
 		需要传用户名:userName=xxx
@@ -61,7 +67,17 @@
 	记录阅读位置
 		/recordIndex
 		传图书名称、阅读位置、用户名:bookName=xxx&userName=xxx&lineNum=xxx
-			
+
+	获取阅读位置：
+		/getRecordIndex
+		传用户名、书名：userName、bookName
+		返回：
+			{
+				"userName":"xxx",
+				"bookName":"xxx",
+				"lineNum":"xxx"
+			}
+		
 	搜索图书
 		/search
 		传入搜索图书名称:bookName=xxx
