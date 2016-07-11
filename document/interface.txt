@@ -11,13 +11,12 @@
 	
 	
 	获取个人偏好设置：
-		/getPregerence
+		/getPreference
 		传用户名：userName=xxx
 		返回：
 			{
 			  "userName":"xxx",
 			  "password":"xxx",
-			  "fontstyleApp":"xxx",
 			  "fontstyleApp":"xxx",
 			  "fontsizeApp":"xxx",
 			  "fontcolorApp":"xxx",
@@ -31,8 +30,8 @@
 			
 		
 	推送个人偏好设置：
-		/pushPregerence
-		传：userName、password、fontstyleApp、fontstyleApp、fontsizeApp、fontcolorApp、bgApp、fontstyleFx、fontsizeFx、fontcolorFx、bgFx
+		/pushPreference
+		传：userName、password、fontstyleApp、fontsizeApp、fontcolorApp、bgApp、fontstyleFx、fontsizeFx、fontcolorFx、bgFx
 		返回是否设置成功:{"result":"true"/"false"}
 
 	
